@@ -6,8 +6,8 @@ public class HookPicksUpConcrete : MonoBehaviour
 {
     public GameObject hook;
     public GameObject concrete;
-    public float yOffset = 1.0f;
-    private bool isAttached = false;
+    public float yOffset = -2.5f;
+    public bool isAttached = false;
 
     
     private void Update()
@@ -37,7 +37,7 @@ public class HookPicksUpConcrete : MonoBehaviour
         }
     }
 
-    private void AttachConcrete()
+    public void AttachConcrete()
     {
         //this calculates the midpoint of hook and concrete to more accurately depict the hook carrying the concrete by the lines.
         Vector3 hookPosition = hook.transform.position;
